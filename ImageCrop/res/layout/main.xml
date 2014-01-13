@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical" 
-	android:padding="20dp">
+	android:orientation="vertical"
+	android:padding="20dp" >
 	<FrameLayout
 		android:layout_width="@dimen/imagesize"
 		android:layout_height="@dimen/imagesize" >
@@ -16,4 +16,8 @@
 			android:layout_height="match_parent"
 			android:src="@drawable/ic_mask" />
 	</FrameLayout>
+	<ImageView
+		android:id="@+id/image2"
+		android:layout_width="@dimen/imagesize"
+		android:layout_height="@dimen/imagesize" />
 </LinearLayout>
