@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical"
 	android:padding="20dp" >
 	<FrameLayout
+		android:id="@+id/imgContainer1"
 		android:layout_width="@dimen/imagesize"
-		android:layout_height="@dimen/imagesize" >
+		android:layout_height="@dimen/imagesize"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" >
 		<ImageView
 			android:id="@+id/image1"
 			android:layout_width="match_parent"
@@ -16,8 +18,54 @@
 			android:layout_height="match_parent"
 			android:src="@drawable/ic_mask" />
 	</FrameLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/imgContainer1"
+		android:layout_marginLeft="@dimen/imager_title_margin"
+		android:layout_marginTop="@dimen/imager_title_margin"
+		android:layout_toRightOf="@id/imgContainer1"
+		android:text="@string/way1" />
 	<ImageView
 		android:id="@+id/image2"
 		android:layout_width="@dimen/imagesize"
-		android:layout_height="@dimen/imagesize" />
-</LinearLayout>
+		android:layout_height="@dimen/imagesize"
+		android:layout_below="@id/imgContainer1"
+		android:layout_marginTop="@dimen/imager_title_margin" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/image2"
+		android:layout_marginLeft="@dimen/imager_title_margin"
+		android:layout_marginTop="@dimen/imager_title_margin"
+		android:layout_toRightOf="@id/image2"
+		android:text="@string/way2" />
+	<ImageView
+		android:id="@+id/image3"
+		android:layout_width="@dimen/imagesize"
+		android:layout_height="@dimen/imagesize"
+		android:layout_below="@id/image2"
+		android:layout_marginTop="@dimen/imager_title_margin" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/image3"
+		android:layout_marginLeft="@dimen/imager_title_margin"
+		android:layout_marginTop="@dimen/imager_title_margin"
+		android:layout_toRightOf="@id/image3"
+		android:text="@string/way3" />
+	<ImageView
+		android:id="@+id/image4"
+		android:layout_width="@dimen/imagesize"
+		android:layout_height="@dimen/imagesize"
+		android:layout_below="@id/image3"
+		android:layout_marginTop="@dimen/imager_title_margin" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/image4"
+		android:layout_marginLeft="@dimen/imager_title_margin"
+		android:layout_marginTop="@dimen/imager_title_margin"
+		android:layout_toRightOf="@id/image4"
+		android:text="@string/way4" />
+</RelativeLayout>

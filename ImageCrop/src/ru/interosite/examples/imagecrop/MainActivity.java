@@ -22,6 +22,8 @@ public class MainActivity extends Activity
 			List<Bitmap> bitmaps = new ArrayList<Bitmap>();
 			bitmaps.add(BitmapUtils.scaleTo(BitmapFactory.decodeResource(MainActivity.this.getResources(), R.drawable.coolphoto), 50));
 			bitmaps.add(BitmapUtils.getCircleMaskedBitmapUsingClip(BitmapFactory.decodeResource(MainActivity.this.getResources(), R.drawable.coolphoto), 25));
+			bitmaps.add(BitmapUtils.getCircleMaskedBitmapUsingShader(BitmapFactory.decodeResource(MainActivity.this.getResources(), R.drawable.coolphoto), 25));
+			bitmaps.add(BitmapUtils.getCircleMaskedBitmapUsingPorterDuff(BitmapFactory.decodeResource(MainActivity.this.getResources(), R.drawable.coolphoto), 25));
 			return bitmaps;
 		}
 
@@ -34,6 +36,8 @@ public class MainActivity extends Activity
 			}
 			image1.setImageBitmap(result.get(0));
 			image2.setImageBitmap(result.get(1));
+			image3.setImageBitmap(result.get(2));
+			image4.setImageBitmap(result.get(3));
 		}
 
 	}
@@ -41,6 +45,8 @@ public class MainActivity extends Activity
 	private LoadImagesTask imagesTask = null;
 	private ImageView image1 = null;
 	private ImageView image2 = null;
+	private ImageView image3 = null;
+	private ImageView image4 = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -49,6 +55,8 @@ public class MainActivity extends Activity
 		setContentView(R.layout.main);
 		image1 = (ImageView) findViewById(R.id.image1);
 		image2 = (ImageView) findViewById(R.id.image2);
+		image3 = (ImageView) findViewById(R.id.image3);
+		image4 = (ImageView) findViewById(R.id.image4);
 	}
 
 	@Override

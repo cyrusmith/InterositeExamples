@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MainActivity</string>
+    <string name="app_name">Image crop circular demo</string>
+    <string name="way1">FrameLayout</string>
+    <string name="way2">Обрезка</string>
+    <string name="way3">Шейдер</string>
+    <string name="way4">PorterDuff</string>
 </resources>
